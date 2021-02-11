@@ -18,7 +18,7 @@ Sample Template: In the sample template that we are going to use, it contains:
  
  A CloudFormation template contains the following sections: __*AWSTemplateFormatVersion, Description, Parameters, Mappings, Resources, and Outputs*__
  
- The most important one is Resources which basically specifies the resources that you want to provision. Sample JSON:
+ The most important one is Resources which basically specifies the resources that you want to provision i.e. allows back-reference resources. Sample JSON:
  
  *
   "Resources" : {
