@@ -138,4 +138,4 @@ __4 Outputs:__ Set of values that need to be made visible to the stack creator
 
 You can also use other tools to generate the JSON template for AWS CloudFormation e.g. __trophosphere__ is a Python based tool to generate the JSON file.
 
-
+*__Important__* References are used to prevent name collisions e.g. if you use the same template in the same account multiple times, then you may end up re-using the same resource names, so a Reference function allows for dynamic naming at execution time by CloudFormation.
