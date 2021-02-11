@@ -95,5 +95,47 @@ Sample Template: In the sample template that we are going to use, it contains:
 
 },
 *
+
+As we can see, we can specify the Image ID (Amazon Machine Image - AMI), the instance ID and the Key Name in an easy manner here. Here, WebServer is the name of the logical Resource the name of the stack that we want to spin up. We add the __Parameters__ section to pass actual values to the template:
+
+*"Parameters" : {
+
+  ...
   
+  "KeyName": {
+  
+    "Description" : "Name of an existing EC2 KeyPair to enable SSH access to the instances",
+    
+    "Type": "AWS::EC2::KeyPair::KeyName",
+    
+    "ConstraintDescription" : "must be the name of an existing EC2 KeyPair."
+    
+  },
+
+  "InstanceType" : {
+  
+    "Description" : "WebServer EC2 instance type",
+    
+    "Type" : "String",
+    
+    "Default" : "t2.small",
+    
+    "AllowedValues" : [ "t1.micro", "t2.nano", "t2.micro", "t2.small", "t2.medium", "t2.large", "m1.small", "m1.medium", "m1.large", "m1.xlarge", "m2.xlarge", "m2.2xlarge", "m2.4xlarge", "m3.medium", "m3.large", "m3.xlarge", "m3.2xlarge", "m4.large", "m4.xlarge", "m4.2xlarge", "m4.4xlarge", "m4.10xlarge", "c1.medium", "c1.xlarge", "c3.large", "c3.xlarge", "c3.2xlarge", "c3.4xlarge", "c3.8xlarge", "c4.large", "c4.xlarge", "c4.2xlarge", "c4.4xlarge", "c4.8xlarge", "g2.2xlarge", "g2.8xlarge", "r3.large", "r3.xlarge", "r3.2xlarge", "r3.4xlarge", "r3.8xlarge", "i2.xlarge", "i2.2xlarge", "i2.4xlarge", "i2.8xlarge", "d2.xlarge", "d2.2xlarge", "d2.4xlarge", "d2.8xlarge", "hi1.4xlarge", "hs1.8xlarge", "cr1.8xlarge", "cc2.8xlarge", "cg1.4xlarge"],
+    "ConstraintDescription" : "must be a valid EC2 instance type."
+    
+  },
+  
+...
+
+*
+
+The CloudFormation template has four main areas:
+
+__1. Description:__ A description of the template usage
+__2. Parameters:__ A set of inputs to customize the template in each deployment
+__3. Resources:__ The set of AWS resources that need to be deployed and the relationships between them
+__4 Outputs:__ Set of values that need to be made visible to the stack creator
+
+
+
 
