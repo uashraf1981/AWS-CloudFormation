@@ -21,7 +21,7 @@ Sample Template: In the sample template that we are going to use, it contains:
  The most important one is Resources which basically specifies the resources that you want to provision. Sample JSON:
  
  *
- "Resources" : {
+  "Resources" : {
   ...    
   "WebServer": {
     "Type" : "AWS::EC2::Instance",
