@@ -136,6 +136,6 @@ __2. Parameters:__ A set of inputs to customize the template in each deployment
 __3. Resources:__ The set of AWS resources that need to be deployed and the relationships between them
 __4 Outputs:__ Set of values that need to be made visible to the stack creator
 
-
+You can also use other tools to generate the JSON template for AWS CloudFormation e.g. __trophosphere__ is a Python based tool to generate the JSON file.
 
 
