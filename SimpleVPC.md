@@ -1,4 +1,4 @@
-Creating a simple VPC Using CloudFormation
+__Creating a simple VPC Using CloudFormation__
 
 We can use JSON or YAML to instantiate the CloudFormation template.
 
