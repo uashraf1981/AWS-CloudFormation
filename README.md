@@ -40,4 +40,4 @@ While it will obviously depend on the infrastructure being designed, but general
 - Subnets
 - SGs
 - NAT
-- Routing Table/Routes
+- Routing Table/Routes -> By giving a default outbound route to the IGW, we make a subnet as public
