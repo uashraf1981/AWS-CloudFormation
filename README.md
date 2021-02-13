@@ -41,3 +41,7 @@ While it will obviously depend on the infrastructure being designed, but general
 - SGs
 - NAT
 - Routing Table/Routes -> By giving a default outbound route to the IGW, we make a subnet as public
+
+__CloudFormation Template *Parameters*__
+
+Parameters allow you to customize the stack that you spin up from the same template. So basically, the number of 'boxes' or 'blank fields' that you get when you are spinning up a new stack.
