@@ -42,6 +42,18 @@ While it will obviously depend on the infrastructure being designed, but general
 - NAT
 - Routing Table/Routes -> By giving a default outbound route to the IGW, we make a subnet as public
 
+
+__Typical Links__
+
+1. Internet Gateway and VPC
+2. PublicRoute (entry in the Route Table) to the Internet Gateway
+3. RouteTable to PublicSubnet
+
+__Dependencies__
+
+1. Public Route and link (Internet Gateway - VPC)
+2. WebServer instance to Public Route (entry in the Route Table)
+
 __CloudFormation Template *Parameters*__
 
 Parameters allow you to customize the stack that you spin up from the same template. So basically, the number of 'boxes' or 'blank fields' that you get when you are spinning up a new stack. We give it a description, default option and drop-down options. We then reference this from within resources using the logical identifier and using the 'Ref' function. 
