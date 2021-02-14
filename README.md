@@ -44,4 +44,4 @@ While it will obviously depend on the infrastructure being designed, but general
 
 __CloudFormation Template *Parameters*__
 
-Parameters allow you to customize the stack that you spin up from the same template. So basically, the number of 'boxes' or 'blank fields' that you get when you are spinning up a new stack. We give it a description, default option and drop-down options. We then reference this from within resources using the logical identifier and using the 'Ref' function.
+Parameters allow you to customize the stack that you spin up from the same template. So basically, the number of 'boxes' or 'blank fields' that you get when you are spinning up a new stack. We give it a description, default option and drop-down options. We then reference this from within resources using the logical identifier and using the 'Ref' function. 
